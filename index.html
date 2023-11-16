@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>S1.2. Bootstrap&SASS</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body style="overflow-x: hidden">
+  <!-- Header -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-top navbar-fixed fs-5 my-4">
+    <div class="container d-flex justify-content-between">
+        <a class="d-flex navbar-brand" href="#"><img src="./Imagenes/logo-bookmark.svg" alt="bookmark" class="img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-auto-close="true">
+            <img src="./Imagenes/icon-hamburger.svg" alt="Toggle Menu" class="img-fluid" />
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item-n">
+                    <a class="nav-link font-monospace" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item-n">
+                    <a class="nav-link font-monospace" href="#">PRICING</a>
+                </li>
+                <li class="nav-item-n">
+                    <a class="nav-link font-monospace" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item-n">
+                    <button class="btn btn-secondary font-monospace fs-5">
+                        LOGIN
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Contenido Principal con Grid Responsive -->
+  <div class="container mx-auto"> <!-- Esto es el principio de div container -->
+
+    <div class="row align-items-center mt-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4 order-2 order-md-1 ">
+        <h1 class="text-md-start text-center">A Simple Bookmark <br />Manager</h1>
+        <div class="col-md-6">
+          <p class="text-md-start text-center mt-3 ">
+            A clean and simple interface to organize your favourite 
+          websites. Open a new browser tab and see your sites load 
+          instantly. Try it for free.
+          </p>
+          </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-md-start justify-content-center text-center text-md-start"> 
+            <button class="btn btn-primary shadow">Get it on Chrome</button>
+            <button class="btn btn-light shadow">Get it on Firefox</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 order-1 order-md-2 position-relative">
+        <div class="custom-background1 position-absolute"></div>
+        <img src="./Imagenes/illustration-hero.svg" class="img-fluid" alt="hero" />
+      </div>
+    </div>
+
+
+   </div><!-- Esto es el final de div container-->
+     
+  <!-- Bootstrap JS -->
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

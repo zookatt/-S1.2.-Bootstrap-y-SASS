@@ -102,4 +102,17 @@
     padding-right: 3rem;
     border-bottom: 1px solid #dee2e6;
   }
+}
+/* Ejercicio 4 --Accordion*/
+.accordion {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+.accordion .accordion-button::after {
+  content: unset;
+}
+.accordion .accordion-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

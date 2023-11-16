@@ -121,3 +121,20 @@ $color-secundario: #FA5959;
         border-bottom: 1px solid #dee2e6; 
     }
 }
+
+/* Ejercicio 4 --Accordion*/
+
+.accordion{
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6; ;
+
+    .accordion-button::after{
+    content: unset;
+    }
+
+    .accordion-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    }
+} 

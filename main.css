@@ -62,4 +62,44 @@
   background-color: #5265E1;
   border-radius: 0 500px 500px 0;
   z-index: -1;
+}
+
+/* Ejercicio 2 -- Features Tabs Bootstrap*/
+.nav-tabs {
+  border: unset;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: none;
+  border-color: unset;
+  border-bottom: 3px solid #FA5959;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    border-top: 1px solid #dee2e6;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    position: relative;
+    z-index: 2;
+    border-bottom: 5px solid #FA5959;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 1px solid #dee2e6;
+  }
 }/*# sourceMappingURL=main.css.map */

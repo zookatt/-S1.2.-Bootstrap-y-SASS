@@ -358,10 +358,84 @@
   </div>
 
    </div><!-- Esto es el final de div container-->
-     
+   <div class="container">
+    <footer class="bg-color-primario text-white">
+
+      <!-- Parte superior del footer con formulario -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 my-5">
+          <h3 class="font-monospace small text-center" style="letter-spacing: 3px;">35.000+ ALREADY JOINED</h3>
+          <h4 class="text-center mb-3">Stay up-to-date with what we're doing</h4>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-12 col-md-auto  text-center">
+              <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Your email"
+                aria-describedby="basic-addon2" style="border-radius: 5px;" required>
+              <div class="invalid-feedback" style="background-color: #FA5959; border-radius: 5px;">
+                <i class="text-white">Whoops, make sure it's an email</i>
+              </div>
+            </div>
+            <div class="col-12 col-md-auto  text-center">
+              <button class="btn btn-secondary" type="submit">Contact Us</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Parte inferior del footer con navbar -->
+      <nav class="navbar navbar-expand-lg navbar-bottom navbar-fixed fs-5 " style="background-color: rgb(61, 61, 112);">
+        <div class="container d-flex justify-content-between">
+          <a class="d-flex navbar-brand" href="#"><img src="./Imagenes/logo-bookmark.svg" alt="bookmark"
+              class="img-fluid" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-auto-close="true">
+            <img src="./Imagenes/icon-hamburger.svg" alt="Toggle Menu" class="img-fluid" />
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+              <li class="nav-item-n">
+                <a class="nav-link fs-6 font-monospace text-white" href="#">FEATURES</a>
+              </li>
+              <li class="nav-item-n">
+                <a class="nav-link  fs-6 font-monospace text-white" href="#">PRICING</a>
+              </li>
+              <li class="nav-item-n">
+                <a class="nav-link  fs-6 font-monospace text-white" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 text-center justify-content-center" style="display: flex; flex-direction: row;">
+              <li class="nav-item-i">
+                  <a class="nav-link" href="#"><img src="./Imagenes/icon-facebook.svg" alt="Facebook" class="img-fluid" /></a>
+              </li>
+              <li class="nav-item-i">
+                  <a class="nav-link" href="#"><img src="./Imagenes/icon-twitter.svg" alt="Twitter" class="img-fluid" /></a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </div>
+
   <!-- Bootstrap JS -->
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+  <script>
+    // La funcion para validae le formulario de email en footer
+    (function () {
+      'use strict';
+      var forms = document.querySelectorAll('.needs-validation');
+      forms.forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+  
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
 </body>
+
 </html>

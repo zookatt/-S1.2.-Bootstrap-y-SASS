@@ -120,21 +120,54 @@ $color-secundario: #FA5959;
         padding-right: 3rem;
         border-bottom: 1px solid #dee2e6; 
     }
-}
-
-/* Ejercicio 4 --Accordion*/
-
-.accordion{
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; ;
-
-    .accordion-button::after{
-    content: unset;
-    }
-
-    .accordion-icon {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
-    }
-} 
+       //Ajustar el formulario 
+       footer{
+        .form-control{
+       display: unset;
+       width: 90%;
+       align-items: center;
+       justify-content: center;
+       text-align: center; 
+       }
+ 
+       .invalid-feedback{
+         width:90%;
+         margin-left: 1.3rem;
+         align-items: center;
+         justify-content: center;
+         
+        }  
+       .btn-secondary{
+         width: 90%;
+       }
+     }
+      
+ 
+ } 
+ 
+ 
+ /* Ejercicio 4 --Accordion*/
+ 
+ .accordion{
+     border-top: 1px solid #dee2e6;
+     border-bottom: 1px solid #dee2e6; ;
+ 
+     .accordion-button::after{
+     content: unset;
+     }
+ 
+     .accordion-icon {
+     display: inline-flex;
+     align-items: center;
+     margin-left: auto;
+     }
+ } 
+ 
+ /* Ejercicio 5 --Footer*/
+ footer{
+  
+     background-color: $color-principal;
+ }
+ 
+ 
+ 

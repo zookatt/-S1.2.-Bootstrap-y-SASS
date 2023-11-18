@@ -102,6 +102,22 @@
     padding-right: 3rem;
     border-bottom: 1px solid #dee2e6;
   }
+  footer .form-control {
+    display: unset;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .invalid-feedback {
+    width: 90%;
+    margin-left: 1.3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .btn-secondary {
+    width: 90%;
+  }
 }
 /* Ejercicio 4 --Accordion*/
 .accordion {
@@ -115,4 +131,9 @@
   display: inline-flex;
   align-items: center;
   margin-left: auto;
+}
+
+/* Ejercicio 5 --Footer*/
+footer {
+  background-color: #5265E1;
 }/*# sourceMappingURL=main.css.map */
